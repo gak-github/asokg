@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap"
+import { Navbar, Nav } from "react-bootstrap"
 
 const CustomNavbar = ({ pageInfo }) => {
   console.log(pageInfo)
@@ -20,18 +20,6 @@ const CustomNavbar = ({ pageInfo }) => {
                 <Navbar.Brand as="span">More</Navbar.Brand>
               </Nav.Link>
             </Link>
-          </Nav>
-          <Nav className="ml-auto">
-            <Form inline onSubmit={e => e.preventDefault()}>
-              <Form.Group>
-                <FormControl
-                  type="text"
-                  placeholder="key word"
-                  className="mr-2"
-                />
-              </Form.Group>
-              <Button>Search</Button>
-            </Form>
           </Nav>
         </Navbar.Collapse>
         {/* </Container> */}
