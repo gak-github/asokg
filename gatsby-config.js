@@ -1,7 +1,8 @@
 module.exports = {
+  pathPrefix: "/",
   siteMetadata: {
     title: `Asokumar Gurusamy`,
-    description: `Personal website for Asokumar Gurusamy.`,
+    description: `A personal website built on gatsby, react-bootstrap, scss and react.`,
     author: `Asokumar Gurusamy`,
   },
   plugins: [
@@ -13,18 +14,18 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `asokg.com`,
+        short_name: `react-bootstrap`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#20232a`,
+        theme_color: `#20232a`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
