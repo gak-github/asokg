@@ -13,12 +13,12 @@ const IndexPage = () => (
       <Row>
         <Col>
           <h3>
-              This page is under development using gatsby, react, react-bootstrap, and scss. This site is hosted on Netlify
+              This page is under development using gatsby, react, react-bootstrap, and scss. Hosted on Netlify.
           </h3>
         </Col>
       </Row>
       <Row className="justify-content-center my-3">
-        <Col md="6">
+        <Col md="4">
           <ListGroup>
             <Image />
           </ListGroup>
