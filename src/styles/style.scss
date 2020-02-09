@@ -3,3 +3,11 @@
 
 @import "layout";
 @import "navbar";
+
+// added from resume.scss
+@import "variables";
+@import "global";
+@import "nav";
+@import "resume-item";
+@import "bootstrap-overrides";
+@import "mixins"

@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Navbar, Nav } from "react-bootstrap"
+import { Navbar, Nav} from "react-bootstrap"
 
 const CustomNavbar = ({ pageInfo }) => {
   console.log(pageInfo)
@@ -15,9 +15,14 @@ const CustomNavbar = ({ pageInfo }) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto" activeKey={pageInfo && pageInfo.pageName}>
-            <Link to="/page-2" className="link-no-style">
-              <Nav.Link as="span" eventKey="page-2">
-                <Navbar.Brand as="span">More</Navbar.Brand>
+            <Link to="/running" className="link-no-style">
+              <Nav.Link as="span" eventKey="running">
+                <Navbar.Brand as="span">Running</Navbar.Brand>
+              </Nav.Link>
+            </Link>
+            <Link to="/resume" className="link-no-style">
+              <Nav.Link as="span" eventKey="resume">
+                <Navbar.Brand as="span">Resume</Navbar.Brand>
               </Nav.Link>
             </Link>
           </Nav>

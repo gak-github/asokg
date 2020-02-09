@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
 
   <Layout pageInfo={{ pageName: "index" }}>
-    <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
+    <SEO title="Home" keywords={[`AsokG`, `Asokumar Gurusamy`, `Ashok Gurusamy`, `Ashok G`]} />
     <Container className="text-center">
       <Row>
         <Col>
