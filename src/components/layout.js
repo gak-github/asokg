@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       <nav>
           <Link to="/" className="link"><h3>Asokumar Gurusamy</h3></Link>
           <ul className="nav__links">
-            <li><Link className= "link" to="/">Home</Link></li>
+            <li><Link className= "link" to="/">About me</Link></li>
             <li><Link className="link" to="/">Skills</Link></li>
             <li><Link className="link" to="/">Experience</Link></li>
             <li><Link className="link" to="/">Blog</Link></li>
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <hr/>
         <footer id="main-footer">
-          <p>Copyright &copy;2020 by Asokumar Gurusamy. All rights reserved.</p>
+          <p style={{ textAlign: "center" }}>Copyright &copy;2020 by Asokumar Gurusamy. All rights reserved.</p>
         </footer>
       </div>
     </>

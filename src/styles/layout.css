@@ -20,8 +20,8 @@ a:hover {
 }
 
 p {
-  line-height: 2rem;
-  text-align: center;
+  line-height: 2.5rem;
+  text-align: justify;
 }
 
 li, a, button {
