@@ -82,7 +82,7 @@ footer {
   margin: 10%;
 }
 .container {
-  position: absolute;
+  position: relative;
   left: 250px;
   width: 78%;
   margin-top: 20px;
