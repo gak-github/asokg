@@ -68,7 +68,7 @@ footer {
 
 .sidenav {
   width: 190px;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 70px;
   background:  rgba(20, 74, 136, 0.87);
@@ -82,7 +82,7 @@ footer {
   margin: 10%;
 }
 .container {
-  position: relative;
+  position: absolute;
   left: 250px;
   width: 78%;
   margin-top: 20px;
