@@ -1,1 +1,90 @@
-@import "./layout.css";
+@import "config";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+}
+
+.showcase {
+    @include set-background($primary-color);
+    height: 500px;
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;        
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        li {
+            padding: 15px;
+        }
+
+        a:hover {
+            color: $secondary-color;
+        }
+
+        a {
+            color: set-text-color($primary-color);
+            text-decoration: none;
+        }
+    }
+
+    &-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+
+        img {
+            width: 25%;
+            border-radius: 50%;
+        }
+
+        h2 {
+          line-height: 1;
+        }
+
+        p {
+            line-height: 2;
+        }
+
+        a {
+            color: set-text-color($primary-color);
+            text-decoration: none;
+        }
+    }
+}
+
+main {
+    h2 {
+        margin-top: 100px;
+        margin-bottom: 150px;
+        font-family: $font-stack;
+        text-align: center;
+    }
+}
+#footer {
+    text-align: center;
+    margin-top: 5px;
+
+    footer {
+        p {
+            color: rgba(10, 2, 2, 0.596)
+        }
+    }
+}
+
+@import "utilities";
+@import "buttons";
+@import "mobile";

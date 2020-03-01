@@ -1,31 +1,17 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import { Navbar, Nav } from "react-bootstrap"
+const Navbar = ()=> {
+    return (
+        <nav>
+            <h1 class="logo">Asokumar Gurusamy</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    );
+};
 
-const CustomNavbar = ({ pageInfo }) => {
-  console.log(pageInfo)
-  return (
-    <>
-      <Navbar variant="dark" expand="lg" id="site-navbar">
-        {/* <Container> */}
-        <Link to="/" className="link-no-style">
-          <Navbar.Brand as="span">Home</Navbar.Brand>
-        </Link>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto" activeKey={pageInfo && pageInfo.pageName}>
-            <Link to="/page-2" className="link-no-style">
-              <Nav.Link as="span" eventKey="page-2">
-                <Navbar.Brand as="span">More</Navbar.Brand>
-              </Nav.Link>
-            </Link>
-          </Nav>
-        </Navbar.Collapse>
-        {/* </Container> */}
-      </Navbar>
-    </>
-  )
-}
-
-export default CustomNavbar
+export default Navbar;
