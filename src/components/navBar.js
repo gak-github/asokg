@@ -1,5 +1,5 @@
 import React from 'react';
-const Navbar = ()=> {
+const Navbar = () => {
     return (
         <nav>
             <h1 class="logo">Asokumar Gurusamy</h1>
