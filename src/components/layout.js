@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "./footer";
-import Navbar from "./topnav";
+import Navbar from "./navbar";
 import ShowcaseContent from './showcase-content';
 import "../styles/style.scss";
 

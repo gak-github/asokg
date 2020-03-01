@@ -3,10 +3,10 @@ import { Link } from 'gatsby';
 const Navbar = () => {
     return (
         <nav>
-            <h1 class="logo">Asokumar Gurusamy</h1>
+            <h1 className="logo">Asokumar Gurusamy</h1>
             <ul>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/">About</Link></li>
+                <li><a href="https://www.linkedin.com/in/asokumargurusamy/" target="_blank" rel="noopener noreferrer" >LinkedIn</a></li>
                 <li><Link to="/">Blog</Link></li>
             </ul>
         </nav>

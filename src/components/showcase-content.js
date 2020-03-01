@@ -3,10 +3,10 @@ import ProfilePic from '../images/Ashok.jpeg';
 
 const ShowcaseContent = () => {
     return (
-        <div class="showcase-content">
+        <div className="showcase-content">
             <div>
                 <h2>About me</h2>
-                <p class="my-1">
+                <p className="my-1">
                     I am a software engineer with 14+ years of experience in payments and
                     e-commerce. I am married, and I have 2 children.
                     My passions include running and learning something new every
