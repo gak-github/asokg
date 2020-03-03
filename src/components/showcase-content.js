@@ -5,9 +5,9 @@ const ShowcaseContent = () => {
     return (
         <div className="showcase-content">
             <div>
-                <h2>About me</h2>
+                <img src={ProfilePic} alt='profile' />
                 <p className="my-1">
-                    I am a software engineer with 14+ years of experience in payments and
+                    I am a full stack software engineer with 14+ years of experience in financial services and
                     e-commerce. I am married, and I have 2 children.
                     My passions include running and learning something new every
                     day whether it be related to coding or not.
@@ -17,11 +17,10 @@ const ShowcaseContent = () => {
                     One cannot escape from his/her duties no matter what, so I take it into my
                     hands to follow through on my responsibilities as diligently as possible.
                     The human body is a tool used to execute its tasks in this life;
-                    it will grow stronger with increased use.
+                    it will be sharper and grow stronger with increased use.
                     The only way to live life to the fullest is by coming to terms with this idea.
               </p>
             </div>
-            <img src={ProfilePic} alt='profile' />
         </div>
     );
 };
