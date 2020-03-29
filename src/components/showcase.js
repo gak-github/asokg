@@ -3,7 +3,7 @@ import ProfilePic from '../images/ashok.png';
 
 const ShowcaseContent = () => {
     return (
-        <div className="showcase-content">
+        <div className="showcase">
             <div>
                 <img src={ProfilePic} alt='profile' />
                 <p className="my-1">

@@ -17,66 +17,68 @@ body {
     line-height: 1.6;
 }
 
-.showcase {
+nav {
     @include set-background($primary-color);
-    height: 550px;
-    
-    nav {
+}
+
+.navbar {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;        
+    ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;        
-        ul {
-            display: flex;
-            list-style-type: none;
-        }
-
-        li {
-            padding: 15px;
-        }
-
-        #linked-in-li {
-            padding: 0;
-            margin: 5px 5px 0 0;
-        }
-
-        a:hover {
-            color: $secondary-color;
-        }
-
-        a {
-            color: set-text-color($primary-color);
-            text-decoration: none;
-        }
-        img:hover {
-            transform: scale(0.85);
-        }
+        list-style-type: none;
     }
- 
-    &-content {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
 
-        img {
-            width: 25%;
-            border-radius: 50%;
-            margin:0 35%;
-        }
+    li {
+        padding: 15px;
+        padding-left: 50px;
+    }
 
-        h2 {
-          line-height: 1;
-        }
+    #linked-in-li {
+        padding: 0;
+        padding-left: 50px;
+        margin: 5px 5px 0 0;
+    }
 
-        p {
-            line-height: 2;
-        }
+    a:hover {
+        color: $secondary-color;
+    }
 
-        a {
-            color: set-text-color($primary-color);
-            text-decoration: none;
-        }
+    a {
+        color: set-text-color($primary-color);
+        text-decoration: none;
+    }
+    img:hover {
+        transform: scale(0.85);
+    }
+}
+
+.showcase {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    img {
+        width: 25%;
+        border-radius: 50%;
+        margin:0 35%;
+    }
+
+    h2 {
+        line-height: 1;
+    }
+
+    p {
+        line-height: 2;
+    }
+
+    a {
+        color: set-text-color($primary-color);
+        text-decoration: none;
     }
 }
 
@@ -99,7 +101,7 @@ main {
 
 #footer {
     text-align: center;
-    margin-top: 5px;
+    margin-top: 100px;
 
     footer {
         p {
