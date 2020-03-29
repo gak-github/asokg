@@ -2,8 +2,9 @@ module.exports = {
   pathPrefix: "/",
   siteMetadata: {
     title: `Asokumar Gurusamy`,
-    description: `A personal website built on gatsby, react-bootstrap, scss and react.`,
+    description: `The personal website for Asokumar Gurusamy known as Ashok G`,
     author: `Asokumar Gurusamy`,
+    keywords: ['agurusamy', 'asokg', 'Asokumar Gurusamy', 'Ashok G', 'Ashokkumar Gurusamy', 'Ashok Gurusamy']
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,16 +21,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `asokg.com`,
-        short_name: `react-bootstrap`,
+        name: `asokumar-gurusamy-personal-webpage`,
+        short_name: `asokg`,
         start_url: `/`,
         background_color: `#20232a`,
         theme_color: `#20232a`,
         display: `minimal-ui`,
+        icon: `src/images/leaf.png`
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
