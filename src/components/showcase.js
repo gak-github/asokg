@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfilePic from '../images/ashok.png';
+import ProfilePic from '../images/Ashok.jpeg';
 
 const ShowcaseContent = () => {
     return (
