@@ -5,7 +5,7 @@ const Footer = () => {
         <div id="footer">
             <hr />
             <footer>
-                <p>Copyright &copy;2020 by Asokumar Gurusamy. All rights reserved.</p>
+                <p>Copyright &copy;{new Date().getFullYear()} by Asokumar Gurusamy. All rights reserved.</p>
             </footer>
         </div>
     )
