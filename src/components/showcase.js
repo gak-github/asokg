@@ -7,7 +7,7 @@ const ShowcaseContent = () => {
             <div>
                 <img src={ProfilePic} alt='profile' />
                 <p className="my-1">
-                    I am a full stack software engineer with 14+ years of experience in financial services and
+                    I am an Engineering Manager in Software Development with 16+ years of experience in financial services and
                     e-commerce. I am married, and I have 2 children.
                     My passions include running and learning something new every
                     day whether it be related to coding or not.
