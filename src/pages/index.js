@@ -6,7 +6,10 @@ import Showcase from '../components/showcase';
 const IndexPage = () => {
 	return (
 		<Layout>
-			<SEO title="Home" />
+			<SEO
+				title="Home"
+				description="Asokumar Gurusamy's personal website"
+			/>
 			<Showcase />
 		</Layout>
 	);

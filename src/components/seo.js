@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 
 function SEO({ description, lang, meta, title, siteMetadata }) {
-	const metaDescription = description || siteMetadata?.description;
+	const metaDescription = description;
 
 	return (
 		<Helmet
@@ -11,7 +11,7 @@ function SEO({ description, lang, meta, title, siteMetadata }) {
 				lang,
 			}}
 			title={title}
-			titleTemplate={`%s | ${siteMetadata?.title}`}
+			titleTemplate={`%s | Asokumar G`}
 			meta={[
 				{
 					name: `description`,
@@ -57,7 +57,8 @@ function SEO({ description, lang, meta, title, siteMetadata }) {
 SEO.defaultProps = {
 	lang: `en`,
 	meta: [],
-	description: ``,
+	description: `Asokumar Gurusamy's perfonal website`,
+	title: 'Home',
 };
 
 SEO.propTypes = {

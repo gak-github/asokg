@@ -344,13 +344,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$prop$2d$type
 ;
 ;
 function SEO({ description, lang, meta, title, siteMetadata }) {
-    const metaDescription = description || siteMetadata?.description;
+    const metaDescription = description;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$helmet$2f$es$2f$Helmet$2e$js__$5b$client$5d$__$28$ecmascript$29$__["Helmet"], {
         htmlAttributes: {
             lang
         },
         title: title,
-        titleTemplate: `%s | ${siteMetadata?.title}`,
+        titleTemplate: `%s | Asokumar G`,
         meta: [
             {
                 name: `description`,
@@ -399,7 +399,8 @@ _c = SEO;
 SEO.defaultProps = {
     lang: `en`,
     meta: [],
-    description: ``
+    description: `Asokumar Gurusamy's perfonal website`,
+    title: 'Home'
 };
 SEO.propTypes = {
     description: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$prop$2d$types$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].string,
@@ -581,7 +582,8 @@ const IndexPage = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$seo$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                title: "Home"
+                title: "Home",
+                description: "Asokumar Gurusamy's personal website"
             }, void 0, false, {
                 fileName: "[project]/src/pages/index.js",
                 lineNumber: 9,
@@ -589,7 +591,7 @@ const IndexPage = ()=>{
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$showcase$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/pages/index.js",
-                lineNumber: 10,
+                lineNumber: 13,
                 columnNumber: 4
             }, ("TURBOPACK compile-time value", void 0))
         ]
