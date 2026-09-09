@@ -1,0 +1,16 @@
+@media(max-width: 700px) {
+    .showcase {
+        height: 80%;
+        &-content {
+            text-align: center;
+        }
+    }
+    
+    main {
+        a {
+            img {
+                margin:0 35%;
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///Users/asokumargurusamy/developer/asokg/nextjs/src/pages/_app.js"],"sourcesContent":["import React from 'react';\nimport '../styles/style.scss';\n\nfunction MyApp({ Component, pageProps }) {\n\treturn (\n\t\t<React.Fragment>\n\t\t\t<Component {...pageProps} />\n\t\t</React.Fragment>\n\t);\n}\n\nexport default MyApp;\n"],"names":["MyApp","Component","pageProps","Fragment"],"mappings":";;;;;AAAA;;;;AAGA,SAASA,MAAM,EAAEC,SAAS,EAAEC,SAAS,EAAE;IACtC,qBACC,qKAAC,8GAAK,CAACC,QAAQ;kBACd,cAAA,qKAACF;YAAW,GAAGC,SAAS;;;;;;;;;;;AAG3B;uCAEeF"}}]
+}
