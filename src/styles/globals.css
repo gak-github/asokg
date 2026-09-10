@@ -1,0 +1,122 @@
+/* Import External Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Import preexisting Tailwind-converted stylesheets from the current directory
+/* 1. Core Tailwind v4 initialization (Crucial!) */
+@import 'tailwindcss';
+@import './buttons.css';
+@import './config.css';
+@import './utilities.css';
+@import './mobile.css';
+
+/* 3. Theme configurations */
+/* @theme {
+	--font-stack: var(--font-lato, 'Lato', sans-serif);
+	--color-primary-light: color-mix(in srgb, var(--color-primary) 90%, white);
+} */
+
+/* 4. Global utilities and styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--color-light);
+	font-family: var(--font-stack);
+	@apply antialiased text-current leading-[1.6];
+}
+
+/* Navigation Container */
+nav {
+	background-color: var(--color-primary-light);
+}
+
+/* Navbar Class & Children */
+.navbar {
+	/* Added temporary background and font hooks to make sure it shows up */
+	background-color: var(--color-primary-light);
+	font-family: var(--font-stack);
+
+	@apply flex w-3/4 mx-auto items-center justify-between;
+
+	/* Explicit nesting using '&' is mandatory for elements in v4 */
+	& ul {
+		@apply flex list-none;
+	}
+
+	& li {
+		@apply p-[15px];
+	}
+
+	& #linked-in-li {
+		@apply p-0 pl-[15px] mt-[5px] mr-[5px] mb-0 ml-0;
+	}
+
+	& a {
+		color: var(--text-color-on-primary-light);
+		@apply no-underline;
+
+		&:hover {
+			color: var(--color-secondary);
+		}
+	}
+
+	& img:hover {
+		@apply transition-transform duration-200 scale-[0.85];
+	}
+}
+
+/* Showcase Section */
+.showcase {
+	@apply h-[550px] flex items-center justify-center mt-[30px];
+
+	img {
+		@apply w-1/4 rounded-full my-0 mx-[35%];
+	}
+
+	h2 {
+		@apply leading-none;
+	}
+
+	p {
+		@apply leading-[2];
+	}
+
+	a {
+		color: var(--text-color-on-primary-light);
+		@apply no-underline;
+	}
+}
+
+/* Main Section */
+main {
+	a {
+		img {
+			@apply my-0 mx-[550px];
+		}
+
+		img:hover {
+			@apply transition-transform duration-200 scale-[0.85];
+		}
+	}
+
+	h2 {
+		font-family: var(--font-stack);
+		@apply mt-[100px] mb-[150px] text-center;
+	}
+}
+
+/* Footer Section */
+#footer {
+	@apply text-center mt-[100px];
+
+	footer {
+		p {
+			color: rgba(10, 2, 2, 0.596);
+		}
+	}
+}

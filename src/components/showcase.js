@@ -4,14 +4,10 @@ import ProfilePicture from './profilePicture';
 const ShowcaseContent = () => {
 	return (
 		<div
-			className="showcase"
+			className="showcase flex justify-center items-center w-full min-h-[80vh] box-border p-5 pt-24 md:pt-5"
 			style={{
-				display: 'flex',
-				justifyContent: 'center',
-				alignItems: 'center',
 				minHeight: '80vh',
 				width: '100%',
-				padding: '20px',
 				boxSizing: 'border-box',
 			}}
 		>

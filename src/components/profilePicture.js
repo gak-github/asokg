@@ -3,7 +3,9 @@ import Image from 'next/image';
 import Profile from '../images/Ashok.jpeg';
 
 const ProfilePicture = () => {
-	return <Image src={Profile} alt="profile" width={150} height={250} />;
+	return (
+		<Image src={Profile} alt="profile" width={150} height={150} priority />
+	);
 };
 
 export default ProfilePicture;

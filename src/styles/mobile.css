@@ -1,0 +1,11 @@
+@media (max-width: 700px) {
+  .showcase {
+    @apply h-4/5;
+  }
+  .showcase-content {
+    @apply text-center;
+  }
+  main a img {
+    @apply mx-[35%] my-0;
+  }
+}

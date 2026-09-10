@@ -1,0 +1,28 @@
+@theme {
+	/* Tailwind v4 theme extensions (or add to tailwind.config.js theme.extend under v3) */
+	--color-primary-light: color-mix(in srgb, var(--color-primary) 90%, white);
+	--color-secondary-light: color-mix(
+		in srgb,
+		var(--color-secondary) 90%,
+		white
+	);
+}
+
+@utility btn-base {
+	@apply inline-block rounded-[5px] px-5 py-2 m-[3px] transition-transform duration-200 hover:scale-90;
+}
+
+/* Base utility styles (equivalent to %btn) */
+.btn-base {
+	@apply inline-block rounded-[5px] px-5 py-2 m-[3px] transition-transform duration-200 hover:scale-90;
+}
+
+/* Primary Button */
+.btn-primary {
+	@apply btn-base bg-[var(--color-primary-light)];
+}
+
+/* Secondary Button */
+.btn-secondary {
+	@apply btn-base bg-[var(--color-secondary-light)];
+}

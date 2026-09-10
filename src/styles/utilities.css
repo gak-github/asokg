@@ -1,0 +1,15 @@
+.container {
+	@apply max-w-7xl mx-auto px-4 overflow-hidden;
+}
+.m-1 {
+	@apply m-4;
+}
+.my-1 {
+	@apply my-4;
+}
+.p-1 {
+	@apply p-4;
+}
+.py-1 {
+	@apply py-4;
+}
